@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +9,7 @@ namespace PApplier
 {
     public partial class Form1 : Form
     {
-        string pubgPath,resPath;
+        string pubgPath, resPath;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +22,7 @@ namespace PApplier
         }
         private void CreateSL(string dst, string src)
         {
-            if(File.Exists(dst)) File.Delete(dst);
+            if (File.Exists(dst)) File.Delete(dst);
             ProcessStartInfo pi = new ProcessStartInfo();
             pi.WindowStyle = ProcessWindowStyle.Hidden;
             pi.FileName = "cmd";
@@ -55,7 +49,7 @@ namespace PApplier
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            foreach ( FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
+            foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
             {
                 PreInjectPak(eachPak.Name);
                 EjectPak(eachPak.Name);
