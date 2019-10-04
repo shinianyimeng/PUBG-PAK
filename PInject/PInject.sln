@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInject", "PInject\PInject.csproj", "{2DBD0451-EE70-4AC7-AC9C-A619C90309AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DBD0451-EE70-4AC7-AC9C-A619C90309AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBD0451-EE70-4AC7-AC9C-A619C90309AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBD0451-EE70-4AC7-AC9C-A619C90309AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBD0451-EE70-4AC7-AC9C-A619C90309AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0DADF6A-41D8-46E9-BCA8-967B791D5F9B}
+	EndGlobalSection
+EndGlobal

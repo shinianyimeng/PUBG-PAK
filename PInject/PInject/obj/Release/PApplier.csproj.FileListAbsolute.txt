@@ -1,0 +1,10 @@
+C:\Users\Park\source\repos\PApplier\PApplier\bin\Release\PApplier.exe.config
+C:\Users\Park\source\repos\PApplier\PApplier\bin\Release\PApplier.exe
+C:\Users\Park\source\repos\PApplier\PApplier\bin\Release\PApplier.pdb
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.csprojAssemblyReference.cache
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.Form1.resources
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.Properties.Resources.resources
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.csproj.GenerateResource.cache
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.csproj.CoreCompileInputs.cache
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.exe
+C:\Users\Park\source\repos\PApplier\PApplier\obj\Release\PApplier.pdb
