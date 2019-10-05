@@ -16,7 +16,7 @@
  I've seen many people get banned using 'Colored player PAK's. I suggest you'd better use it with something to prevent BattleEye from capture your screen.
 ## [How-to]()
 ### [Download Release](https://github.com/goraegori/PUBG-PAK/raw/master/PInject/PInject/bin/Release.zip)
-### 1. (OPTIONAL) Put all your modified pak files in USB, VHD or whatever. (In my case, E:\res)
+### 1. (OPTIONAL) Put all your modified pak files & pakList.json in USB, VHD or whatever. (In my case, E:\res)
 ### 2. Run the program and press start button.
 ### 3. Run PUBG.
 ### 4. (OPTIONAL) Press bypass button in the first game.
