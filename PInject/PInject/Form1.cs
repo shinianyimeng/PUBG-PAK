@@ -16,9 +16,9 @@ namespace PApplier
             pubgPath = textBox1.Text + @"\TslGame\Content\Paks";
             resPath = textBox2.Text;
         }
-        async Task Wait2Sec()
+        async Task Wait3Sec()
         {
-            await Task.Delay(2000, new CancellationTokenSource().Token);
+            await Task.Delay(3000, new CancellationTokenSource().Token);
         }
         private void CreateSL(string dst, string src)
         {
@@ -72,7 +72,7 @@ namespace PApplier
             Text = "Pak 적용 대기중";
             if (Process.GetProcessesByName("TslGame").Length >= 2)
             {
-                await Wait2Sec();
+                await Wait3Sec();
                 if (chkUsePList.Checked)
                     InjectPak("pakList.json");
                 foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
