@@ -1,0 +1,10 @@
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\bin\Release\PInject.exe.config
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\bin\Release\PInject.exe
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\bin\Release\PInject.pdb
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.csprojAssemblyReference.cache
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PApplier.Form1.resources
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.Properties.Resources.resources
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.csproj.GenerateResource.cache
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.csproj.CoreCompileInputs.cache
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.exe
+C:\Users\Park\Documents\GitHub\PUBG-PAK\PInject\PInject\obj\Release\PInject.pdb
