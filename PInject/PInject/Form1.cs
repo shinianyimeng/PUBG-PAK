@@ -72,13 +72,13 @@ namespace PApplier
             Text = "Pak 적용 대기중";
             if (Process.GetProcessesByName("TslGame").Length >= 2)
             {
+                tmrCheckPak.Stop();
                 await WaitnSec(int.Parse(textBox3.Text));
                 if (chkUsePList.Checked)
                     InjectPak("pakList.json");
                 foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
                     InjectPak(eachPak.Name);
                 Text = "적용완료";
-                tmrCheckPak.Stop();
             }
         }
 
@@ -95,6 +95,11 @@ namespace PApplier
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
             resPath = textBox2.Text;
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = (int.Parse(textBox3.Text) + 100).ToString();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
