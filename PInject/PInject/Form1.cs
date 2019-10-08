@@ -22,6 +22,18 @@ namespace PApplier
         {
             await Task.Delay(n, new CancellationTokenSource().Token);
         }
+        private string GetVHDVolumeLabel()
+        {
+            DriveInfo[] drive = DriveInfo.GetDrives();
+            for (int i = 0; i < drive.Length; i++)
+            {
+                if (drive[i].VolumeLabel == "PUBG")
+                {
+                    return drive[i].RootDirectory.ToString();
+                }
+            }
+            return "E:\\";
+        }
         private void AttachVHD()
         {
             ProcessStartInfo pi = new ProcessStartInfo();
@@ -67,7 +79,6 @@ namespace PApplier
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            AttachVHD();
             foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
             {
                 PreInjectPak(eachPak.Name);
@@ -120,6 +131,13 @@ namespace PApplier
         private void Button3_Click(object sender, EventArgs e)
         {
             textBox3.Text = (int.Parse(textBox3.Text) + 100).ToString();
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            AttachVHD();
+            await WaitnSec(1000);
+            textBox2.Text = GetVHDVolumeLabel() + "res";
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
