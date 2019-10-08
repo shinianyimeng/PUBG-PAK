@@ -34,11 +34,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tmrCheckPak = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.chkUsePList = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(356, 124);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(21, 21);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "+";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -108,7 +118,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 21);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "3000";
+            this.textBox3.Text = "2500";
             // 
             // textBox2
             // 
@@ -130,16 +140,6 @@
             this.chkUsePList.TabIndex = 3;
             this.chkUsePList.Text = "Use PakList.json";
             this.chkUsePList.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(356, 124);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(21, 21);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // Form1
             // 

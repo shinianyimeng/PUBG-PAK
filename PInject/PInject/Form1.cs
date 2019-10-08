@@ -15,10 +15,28 @@ namespace PApplier
             InitializeComponent();
             pubgPath = textBox1.Text + @"\TslGame\Content\Paks";
             resPath = textBox2.Text;
+            File.WriteAllText(Application.StartupPath + "\\mnt.txt", "SELECT VDISK FILE = \"" + Application.StartupPath + "\\res.vhd" + "\"\r\nATTACH VDISK", System.Text.Encoding.ASCII);
+            File.WriteAllText(Application.StartupPath + "\\unmnt.txt", "SELECT VDISK FILE = \"" + Application.StartupPath + "\\res.vhd" + "\"\r\nDETACH VDISK", System.Text.Encoding.ASCII);
         }
         async Task WaitnSec(int n)
         {
             await Task.Delay(n, new CancellationTokenSource().Token);
+        }
+        private void AttachVHD()
+        {
+            ProcessStartInfo pi = new ProcessStartInfo();
+            pi.WindowStyle = ProcessWindowStyle.Hidden;
+            pi.FileName = "DISKPART.EXE";
+            pi.Arguments = "/S \"" + Application.StartupPath + "\\mnt.txt" + "\"";
+            Process.Start(pi);
+        }
+        private void DetachVHD()
+        {
+            ProcessStartInfo pi = new ProcessStartInfo();
+            pi.WindowStyle = ProcessWindowStyle.Hidden;
+            pi.FileName = "DISKPART.EXE";
+            pi.Arguments = "/S \"" + Application.StartupPath + "\\unmnt.txt" + "\"";
+            Process.Start(pi);
         }
         private void CreateSL(string dst, string src)
         {
@@ -49,6 +67,7 @@ namespace PApplier
         }
         private void Button1_Click(object sender, EventArgs e)
         {
+            AttachVHD();
             foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
             {
                 PreInjectPak(eachPak.Name);
@@ -89,6 +108,7 @@ namespace PApplier
                 EjectPak(eachPak.Name);
             if (chkUsePList.Checked)
                 EjectPak("pakList.json");
+            DetachVHD();
             Text = "우회 완료";
         }
 
@@ -107,6 +127,7 @@ namespace PApplier
             foreach (FileInfo eachPak in new DirectoryInfo(resPath).GetFiles("*.pak"))
                 EjectPak(eachPak.Name);
             EjectPak("pakList.json");
+            DetachVHD();
         }
     }
 }
