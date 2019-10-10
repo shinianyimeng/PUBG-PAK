@@ -76,18 +76,18 @@ namespace PApplier
         private void PreInjectPak(string pakName)
         {
             String org = pubgPath + @"\" + pakName,
-                mid = Application.CommonAppDataPath + @"\" + pakName;
+                mid = Application.StartupPath + @"\" + pakName;
             CreateSL(org, mid);
         }
         private void InjectPak(string pakName)
         {
-            String mid = Application.CommonAppDataPath + @"\" + pakName,
+            String mid = Application.StartupPath + @"\" + pakName,
                 src = resPath + @"\" + pakName;
             CreateSL(mid, src);
         }
         private void EjectPak(string pakName)
         {
-            String mid = Application.CommonAppDataPath + @"\" + pakName,
+            String mid = Application.StartupPath + @"\" + pakName,
                 src = Application.StartupPath + @"\org." + pakName.Split('.')[1];
             CreateSL(mid, src);
         }
