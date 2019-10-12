@@ -39,12 +39,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.chkUsePList = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 20);
+            this.button1.Location = new System.Drawing.Point(12, 43);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 46);
             this.button1.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(196, 20);
+            this.button2.Location = new System.Drawing.Point(202, 43);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 46);
             this.button2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 72);
+            this.textBox1.Location = new System.Drawing.Point(12, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(371, 21);
             this.textBox1.TabIndex = 2;
@@ -78,6 +79,7 @@
             // groupBox1
             // 
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -87,15 +89,15 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(389, 147);
+            this.groupBox1.Size = new System.Drawing.Size(389, 181);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(356, 124);
+            this.button3.Location = new System.Drawing.Point(362, 147);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(21, 21);
             this.button3.TabIndex = 7;
@@ -106,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(230, 127);
+            this.label1.Location = new System.Drawing.Point(236, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 12);
             this.label1.TabIndex = 6;
@@ -114,15 +116,15 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(312, 124);
+            this.textBox3.Location = new System.Drawing.Point(318, 147);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 21);
             this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "2500";
+            this.textBox3.Text = "3000";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 99);
+            this.textBox2.Location = new System.Drawing.Point(12, 122);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(371, 21);
             this.textBox2.TabIndex = 4;
@@ -134,18 +136,29 @@
             this.chkUsePList.AutoSize = true;
             this.chkUsePList.Checked = true;
             this.chkUsePList.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUsePList.Location = new System.Drawing.Point(6, 126);
+            this.chkUsePList.Location = new System.Drawing.Point(12, 149);
             this.chkUsePList.Name = "chkUsePList";
             this.chkUsePList.Size = new System.Drawing.Size(119, 16);
             this.chkUsePList.TabIndex = 3;
             this.chkUsePList.Text = "Use PakList.json";
             this.chkUsePList.UseVisualStyleBackColor = true;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(354, 17);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(29, 12);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "설정";
+            this.linkLabel1.Click += new System.EventHandler(this.LinkLabel1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 169);
+            this.ClientSize = new System.Drawing.Size(413, 198);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "PInject";
@@ -169,6 +182,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
