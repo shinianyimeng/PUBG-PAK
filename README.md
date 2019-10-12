@@ -18,6 +18,7 @@
 ### [Download Release](https://github.com/goraegori/PUBG-PAK/raw/master/PInject/PInject/bin/Release.zip)
 ### 1. (OPTIONAL) Put all your modified pak files & pakList.json in USB, VHD or whatever. (In my case, E:\res)
 ### 2. Run the program and press start button.
+### 2-1. (Only in first run after update) Press "설정" (which is LinkedLabel)
 ### 3. Run PUBG.
 ### 4. (OPTIONAL) Press bypass button in the first game.
 ### 5. (OPTIONAL) Eject Your USB or VHD.
