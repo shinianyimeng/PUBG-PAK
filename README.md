@@ -24,4 +24,5 @@
 ### 5. (OPTIONAL) Eject Your USB or VHD.
 ### 6. (REQUIRED) BENEFIT.
 
-# [HOPE It get fixed soon :D]()
+# 6.2.7.9 Available
+# [HOPE It get patched soon :D]()
